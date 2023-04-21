@@ -64,3 +64,52 @@ public class ContaBancaria
 //Se ela não estiver autorizada, uma exceção é lançada. Note que a propriedade ainda permite a escrita no campo _saldo, pois a restrição é apenas para a leitura do valor.
 
 //Em resumo, o encapsulamento em C# é uma técnica que ajuda a garantir a integridade dos dados de uma classe e a limitar o acesso a eles por outras partes do programa.
+
+//***************************************************
+
+//Em C# um campo declarado com "private set" só pode ser alterado dentro da classe em que ele foi declarado. 
+//Isso significa que outras classes que acessam essa classe não poderão alterar o valor desse campo diretamente, o que ajuda a manter o encapsulamento e a integridade
+//dos dados. No entanto, é possível fornecer um método público na classe que permita alterar o valor desse campo de forma controlada, o que ainda assim mantém o 
+//encapsulamento e fornece um meio de acesso controlado aos dados.
+
+
+//Aqui está um exemplo:
+
+
+public class Person 
+{
+    public string Name { get; private set; }
+    
+    public Person(string name) 
+    {
+        Name = name;
+    }
+    
+    public void ChangeName(string newName) 
+    {
+        // Aqui é permitido alterar o valor de Name, pois estamos dentro da classe Person
+        Name = newName;
+    }
+}
+
+public class Program 
+{
+    static void Main() 
+    {
+        Person person = new Person("João");
+        Console.WriteLine(person.Name); // Output: "João"
+
+        // Tentar alterar o valor de Name aqui irá resultar em erro de compilação
+        // person.Name = "Maria"; 
+
+        person.ChangeName("Maria");
+        Console.WriteLine(person.Name); // Output: "Maria"
+    }
+}
+
+
+//Nesse exemplo, a classe Person possui um campo Name com modificadores public e private set. Isso significa que o valor de Name só pode ser definido na classe
+//Person, como no construtor Person(string name), mas pode ser acessado e lido em qualquer lugar do código.
+
+//No entanto, a alteração do valor de Name só é permitida dentro da classe Person, como no método ChangeName(string newName), que tem acesso ao campo private set.
+//Fora da classe, como no método Main(), tentar alterar o valor de Name resultará em um erro de compilação.
