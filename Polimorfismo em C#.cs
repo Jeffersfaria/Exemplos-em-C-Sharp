@@ -178,3 +178,17 @@ funcionario1.Salario = 1000.00m;
 //A possibilidade de instanciar uma classe derivada a partir de uma classe base ocorre graças ao uso da herança em C#. Quando uma classe é derivada de outra, ela herda 
 //os membros da classe base e, portanto, pode ser instanciada diretamente ou através da classe derivada. Além disso, a herança permite que a classe derivada adicione novos
 //membros ou modifique os membros herdados da classe base, fornecendo maior flexibilidade na criação de objetos.
+
+
+//Uma classe abstrata que herda de outra classe abstrata tem duas opções:
+
+    //Implementar todos os métodos abstratos herdados da classe base.
+    //Marcar a classe derivada também como abstrata, deixando a responsabilidade de implementar esses métodos para suas subclasses.
+
+//Então, não é obrigatório que a classe derivada implemente todos os métodos abstratos da classe base, mas uma implementação completa ou uma nova classe abstrata deve ser 
+//fornecida.
+        
+      
+//Ao mudar a subclasse para abstrata, você não é mais obrigado a implementar os métodos abstratos da classe pai. Entretanto, é importante lembrar que isso pode impactar
+//em outras partes do código que utilizam essa subclasse, e é preciso avaliar se essa mudança é a melhor opção. Além disso, pode ser necessário fazer outras modificações
+//no código para garantir o funcionamento correto da aplicação.        
