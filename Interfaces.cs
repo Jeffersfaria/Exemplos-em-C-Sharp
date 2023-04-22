@@ -50,3 +50,26 @@ public class Photo : IMedia
 //qual usar na nova instância;
 //O funcionamento das interfaces na orientação a objetos, que são contratos que definem comportamentos a serem implementados pelas classes que assinam este contrato;
 //Como utilizar o padrão de nomenclatura adotada para nomeação de interfaces, aplicando a convenção que utiliza o prefixo "I".
+
+
+//Uma boa metáfora para entender o conceito de interface em C# é o de um controlador remoto de TV.
+
+//Imagine que sua TV é uma classe em C#. Ela tem vários métodos que você pode usar para mudar o canal, ajustar o volume, mudar as configurações de imagem, entre outros.
+
+//Agora imagine que você tem um controle remoto universal, que é uma interface. Essa interface também tem botões para mudar o canal, ajustar o volume e mudar as configurações
+//de imagem, mas não faz nada por conta própria. Em vez disso, ela simplesmente envia um sinal para a TV, que é quem executa as ações correspondentes.
+
+//Da mesma forma, uma interface em C# é um tipo de contrato que define quais métodos e propriedades uma classe deve implementar. Ela não tem implementação própria, mas 
+//simplesmente define a assinatura dos métodos que devem ser implementados pela classe que a implementa.
+
+//Por exemplo, suponha que tenhamos a interface IAnimal, que define um método FazerBarulho(). Em seguida, temos as classes Cachorro e Gato, que implementam a interface IAnimal
+//e, portanto, devem ter o método FazerBarulho().
+
+//A implementação do método FazerBarulho() em cada classe será diferente, assim como a TV executa ações diferentes quando você aperta os botões do controle remoto.
+//Mas, ao implementar a interface IAnimal, as classes Cachorro e Gato garantem que terão esse método em comum, o que torna mais fácil para outras partes do código 
+//trabalhar com eles de maneira consistente.
+    
+
+//E Quando uma classe implementa uma interface, ela é obrigada a fornecer uma implementação para todos os membros da interface. Caso contrário, essa classe deve ser 
+//marcada como abstrata. Isso significa que as classes que implementam a interface precisam fornecer uma implementação para todos os métodos e propriedades declarados na
+//interface.
