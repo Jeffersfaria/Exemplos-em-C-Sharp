@@ -73,3 +73,7 @@ public class Photo : IMedia
 //E Quando uma classe implementa uma interface, ela é obrigada a fornecer uma implementação para todos os membros da interface. Caso contrário, essa classe deve ser 
 //marcada como abstrata. Isso significa que as classes que implementam a interface precisam fornecer uma implementação para todos os métodos e propriedades declarados na
 //interface.
+
+
+//Links:https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/interface
+//https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/types/interfaces
