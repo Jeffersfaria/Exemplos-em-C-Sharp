@@ -38,4 +38,5 @@ catch (DivideByZeroException ex)
 }
 
 
-//No exemplo acima, o código dentro do bloco "try" chama o método "Divide" com um divisor igual a zero. Como resultado, uma exceção "DivideByZeroException" é lançada. O bloco "catch" captura a exceção e executa o código de tratamento, exibindo a mensagem de erro na saída. Isso evita que a exceção pare a execução do programa e permite que você tome medidas apropriadas para lidar com o erro.
+//No exemplo acima, o código dentro do bloco "try" chama o método "Divide" com um divisor igual a zero. Como resultado, uma exceção "DivideByZeroException" é lançada. O bloco "catch" captura a exceção e e
+//xecuta o código de tratamento, exibindo a mensagem de erro na saída. Isso evita que a exceção pare a execução do programa e permite que você tome medidas apropriadas para lidar com o erro.
