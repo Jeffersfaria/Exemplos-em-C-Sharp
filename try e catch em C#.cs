@@ -104,5 +104,58 @@ catch (Exception ex)
 //Esses exemplos demonstram como utilizar as propriedades "Message", "StackTrace" e "InnerException" para obter informações úteis sobre as exceções ocorridas durante a execução do código.
 
 
+***********************************************************************************************************************************************************************************************
+
+
+//Aqui está um exemplo de bloco catch em C# onde uma variável de exceção é definida:
+
+
+try
+{
+    int result = Divide(10, 0);
+    Console.WriteLine("Resultado: " + result);
+}
+catch (DivideByZeroException ex)
+{
+    Console.WriteLine("Erro: Tentativa de divisão por zero.");
+    Console.WriteLine("Mensagem de exceção: " + ex.Message);
+    Console.WriteLine("Detalhes da exceção: " + ex.StackTrace);
+}
+
+
+//Nesse exemplo, a função Divide é chamada com os parâmetros 10 e 0, o que causará uma exceção DivideByZeroException devido à tentativa de divisão por zero. No bloco catch, uma variável ex do tipo 
+//DivideByZeroException é definida para capturar a exceção lançada.
+
+//Dentro do bloco catch, você pode utilizar a variável ex para acessar informações da exceção. No exemplo, são exibidas a mensagem de exceção utilizando ex.Message e os detalhes da exceção (pilha de chamadas)
+//utilizando ex.StackTrace. Essas informações podem ser úteis para depuração e tratamento adequado das exceções.
+
+//Lembrando que é importante tratar as exceções de forma apropriada no código, garantindo a robustez e a manipulação adequada dos erros que possam ocorrer durante a execução.
+
+
+
+
+
+//"ex" é um objeto da classe DivideByZeroException que é criado quando ocorre a exceção. No bloco catch, você pode declarar uma variável para capturar a exceção e, em seguida, utilizar o operador de 
+//ponto (.) para acessar as propriedades e métodos desse objeto.
+
+//No exemplo que foi dado anteriormente, ex é uma variável que representa a exceção DivideByZeroException. Essa classe possui propriedades, como Message e StackTrace, que fornecem informações sobre a exceção
+//ocorrida. O uso do operador de ponto permite acessar essas propriedades para obter os detalhes relevantes da exceção.
+
+//Por exemplo, ao utilizar ex.Message, você está acessando a propriedade Message do objeto ex, que contém uma mensagem descritiva da exceção. Da mesma forma, ao utilizar ex.StackTrace, você está acessando a 
+//propriedade StackTrace do objeto ex, que contém a pilha de chamadas do momento em que a exceção foi lançada.
+
+//Ao usar o operador de ponto (.), você está acessando membros (propriedades, métodos, etc.) de um objeto em C#. Isso permite interagir com o objeto e obter informações relevantes para tratamento 
+//de exceções, registro de erros, entre outras tarefas.
+
+//"ex" é uma variável que representa um objeto da classe DivideByZeroException.
+
+//Em C#, as exceções são representadas por objetos de classes derivadas da classe base Exception. Quando uma exceção é lançada, um objeto é criado para representar essa exceção. Esse objeto pode ser
+//atribuído a uma variável para posterior manipulação no bloco catch.
+
+//Então, ex é uma variável do tipo DivideByZeroException que contém o objeto criado quando a exceção é lançada. Portanto, pode-se dizer que ex é uma variável que referencia um objeto de exceção.
+
+
+
+
 
 
